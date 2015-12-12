@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lisa art</title>
+		<meta charset=utf-8>
+        <meta name="description" content="Moving Boxes Menu with jQuery" />
+        <meta name="keywords" content="jquery, boxes, menu, rotating, content, background image, full page"/>
+		<link rel="shortcut icon" href="file:///C|/Users/Public.Лиза-ПК/Desktop/favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Astloch:regular,bold' rel='stylesheet' type='text/css' />
+		<link type="text/css" href="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+    </head>
+    <body>
+    <style>
+	.mb_footer
+	{
+ height:40px;}
+ </style>
+		<div id="mb_background" class="mb_background">
+			<img class="mb_bgimage" src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/default.jpg" alt="Background"/>
+			<div class="mb_overlay"></div>
+			<div class="mb_loading"></div>
+		</div>
+		<div id="mb_pattern" class="mb_pattern"></div>
+		<div class="mb_heading">
+			<h1>Lisa Ponomarenko</h1>
+		</div>
+		<div id="mb_menu" class="mb_menu">
+            <a href="#" data-speed="1000" data-easing="easeInExpo">Portraits</a>
+            <a href="#" data-speed="1000" data-easing="easeInExpo">Line art</a>
+            <a href="#" data-speed="1000" data-easing="easeInExpo">Mix</a>
+            		</div>
+		<div id="mb_content_wrapper" class="mb_content_wrapper">
+			<span class="mb_close"></span>
+             <div class="mb_content">
+				<h2>Portraits</h2>
+				<div class="mb_content_inner">
+					<p></p>
+					<ul id="mb_imagelist" class="mb_imagelist">
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/40.jpg" alt="image40" data-bgimg="images/image40.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/41.jpg" alt="image41" data-bgimg="images/image41.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/42.jpg" alt="image42" data-bgimg="images/image42.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/43.jpg" alt="image43" data-bgimg="images/image43.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/44.jpg" alt="image44" data-bgimg="images/image44.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/45.jpg" alt="image45" data-bgimg="images/image45.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/46.jpg" alt="image46" data-bgimg="images/image46.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/49.jpg" alt="image49" data-bgimg="images/image49.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/48.jpg" alt="image48" data-bgimg="images/image48.jpg"/></li> 
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/50.jpg" alt="image50" data-bgimg="images/image50.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/55.jpg" alt="image55" data-bgimg="images/image55.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/47.jpg" alt="image47" data-bgimg="images/image47.jpg"/></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mb_content">
+				<h2>Line art</h2>
+				<div class="mb_content_inner">
+					<p></p>
+					<ul id="mb_imagelist" class="mb_imagelist">
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/1.jpg" alt="image1" data-bgimg="images/image1.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/2.jpg" alt="image2" data-bgimg="images/image2.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/3.jpg" alt="image3" data-bgimg="images/image3.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/4.jpg" alt="image4" data-bgimg="images/image4.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/11.jpg" alt="image11" data-bgimg="images/image11.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/12.jpg" alt="image12" data-bgimg="images/image12.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/13.jpg" alt="image13" data-bgimg="images/image13.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/14.jpg" alt="image14" data-bgimg="images/image14.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/15.jpg" alt="image15" data-bgimg="images/image15.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/16.jpg" alt="image16" data-bgimg="images/image16.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/17.jpg" alt="image17" data-bgimg="images/image17.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/18.jpg" alt="image18" data-bgimg="images/image18.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/19.jpg" alt="image19" data-bgimg="images/image19.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/20.jpg" alt="image20" data-bgimg="images/image20.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/21.jpg" alt="image21" data-bgimg="images/image21.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/22.jpg" alt="image22" data-bgimg="images/image22.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/23.jpg" alt="image23" data-bgimg="images/image23.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/24.jpg" alt="image24" data-bgimg="images/image24.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/25.jpg" alt="image25" data-bgimg="images/image25.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/26.jpg" alt="image26" data-bgimg="images/image26.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/27.jpg" alt="image27" data-bgimg="images/image27.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/28.jpg" alt="image28" data-bgimg="images/image28.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/29.jpg" alt="image29" data-bgimg="images/image29.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/30.jpg" alt="image30" data-bgimg="images/image30.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/31.jpg" alt="image31" data-bgimg="images/image31.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/32.jpg" alt="image32" data-bgimg="images/image32.jpg"/></li>
+                      	<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/33.jpg" alt="image33" data-bgimg="images/image33.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/34.jpg" alt="image34" data-bgimg="images/image34.jpg"/></li>
+					</ul>
+				</div>
+			</div>
+            <div class="mb_content">
+				<h2>Mix</h2>
+				<div class="mb_content_inner">
+					<p></p>
+					<ul id="mb_imagelist" class="mb_imagelist">
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/51.jpg" alt="image51" data-bgimg="images/image51.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/52.jpg" alt="image52" data-bgimg="images/image52.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/38.jpg" alt="image38" data-bgimg="images/image38.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/54.jpg" alt="image54" data-bgimg="images/image54.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/64.jpg" alt="image64" data-bgimg="images/image64.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/53.jpg" alt="image53" data-bgimg="images/image53.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/62.jpg" alt="image62" data-bgimg="images/image62.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/61.jpg" alt="image61" data-bgimg="images/image61.jpg"/></li>
+                         <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/35.jpg" alt="image35" data-bgimg="images/image35.jpg"/></li>
+                          <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/9.jpg" alt="image9" data-bgimg="images/image9.jpg"/></li>
+                          <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/10.jpg" alt="image10" data-bgimg="images/image10.jpg"/></li>
+                          <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/5.jpg" alt="image5" data-bgimg="images/image5.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/6.jpg" alt="image6" data-bgimg="images/image6.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/7.jpg" alt="image7" data-bgimg="images/image7.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/8.jpg" alt="image8" data-bgimg="images/image8.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/36.jpg" alt="image36" data-bgimg="images/image36.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/37.jpg" alt="image37" data-bgimg="images/image37.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/56.jpg" alt="image56" data-bgimg="images/image56.jpg"/></li> 
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/57.jpg" alt="image57" data-bgimg="images/image57.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/63.jpg" alt="image63" data-bgimg="images/image63.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/58.jpg" alt="image58" data-bgimg="images/image58.jpg"/></li>
+                        <li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/59.jpg" alt="image59" data-bgimg="images/image59.jpg"/></li>
+						<li><img src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/small/60.jpg" alt="image60" data-bgimg="images/image60.jpg"/></li>
+                  					</ul>
+				</div>
+			</div>
+		<div class="mb_footer">
+        <a href="https://www.facebook.com/profile.php?id=100006208305077"><img style="margin:0px 2px 0px 1px" height="30px" src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/fb.png" /></a>
+        <a href="https://vk.com/lisa_ponomarenko"><img style="margin:0px 2px 0px 1px" height="30px" src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/vk.png" /></a>
+        <a href="https://www.youtube.com/channel/UCTo4B79znBSbSb65yQsEHZw"><img style="margin:0px 2px 0px 1px" height="30px" src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/images/youtube.png" /></a>
+        </div>
+		<!-- The JavaScript -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/js/jquery.easing.1.3.js"></script>
+		<!-- the mousewheel plugin - optional to provide mousewheel support -->
+		<script type="text/javascript" src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/js/jquery.mousewheel.js"></script>
+		<!-- the jScrollPane script -->
+		<script type="text/javascript" src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/js/jquery.jscrollpane.min.js"></script>
+		<script type="text/javascript" src="file:///C|/Users/Public.Лиза-ПК/Desktop/cv/js/jquery.transform-0.9.3.min_.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var $menu			= $('#mb_menu'),
+				$menuItems			= $menu.children('a'),
+				$mbWrapper			= $('#mb_content_wrapper'),
+				$mbClose			= $mbWrapper.children('.mb_close'),
+				$mbContentItems		= $mbWrapper.children('.mb_content'),
+				$mbContentInnerItems= $mbContentItems.children('.mb_content_inner');
+				$mbPattern			= $('#mb_pattern'),
+				$works				= $('#mb_imagelist > li'),
+				$mb_bgimage			= $('#mb_background > img'),
+				
+				Menu		 		= (function(){
+					
+					var init		= function() {
+						preloadImages();
+						initPlugins();
+						initPattern();
+						initEventsHandler();
+					},
+					//preloads the images for the work area (data-bgimg attr)
+					preloadImages	= function() {
+						$works.each(function(i) {
+							$('<img/>').attr('src' , $(this).children('img').data('bgimg'));
+						});
+					},
+					//initialise the jScollPane (scroll plugin)
+					initPlugins		= function() {
+						$mbContentInnerItems.jScrollPane({
+							verticalDragMinHeight: 40,
+							verticalDragMaxHeight: 40
+						});
+					},
+					/*
+						draws 16 boxes on a specific area of the page.
+						we randomly calculate the top, left, and rotation angle for each one of them
+					 */
+					initPattern		= function() {
+						for(var i = 0; i < 16 ; ++i) {
+							//random opacity, top, left and angle
+							var o		= 0.1,
+							t		= Math.floor(Math.random()*196) + 5, // between 5 and 200
+							l		= Math.floor(Math.random()*696) + 5, // between 5 and 700
+							a		= Math.floor(Math.random()*101) - 50; // between -50 and 50
+									
+							$el		= $('<div>').css({
+								opacity			: o,
+								top				: t + 'px',
+								left			: l + 'px'
+							});
+								
+							if (!$.browser.msie)
+								$el.transform({'rotate'	: a + 'deg'});
+								
+							$el.appendTo($mbPattern);
+						}
+						$mbPattern.children().draggable(); //just for fun
+					},
+					/*
+						when the User closes a content item, we move the boxes back to the original place,
+						with new random values for top, left and angle though
+					 */
+					disperse 		= function() {
+						$mbPattern.children().each(function(i) {
+							//random opacity, top, left and angle
+							var o			= 0.1,
+							t			= Math.floor(Math.random()*196) + 5, // between 5 and 200
+							l			= Math.floor(Math.random()*696) + 5, // between 5 and 700
+							a			= Math.floor(Math.random()*101) - 50; // between -50 and 50
+							$el			= $(this),
+							param		= {
+								width	: '50px',
+								height	: '50px',
+								opacity	: o,
+								top		: t + 'px',
+								left	: l + 'px'
+							};
+									
+							if (!$.browser.msie)
+								param.rotate	= a + 'deg';
+									
+							$el.animate(param, 1000, 'easeOutExpo');
+						});
+					},
+					initEventsHandler	= function() {
+						/*
+							click a link in the menu
+						 */
+						$menuItems.bind('click', function(e) {
+							var $this	= $(this),
+							pos		= $this.index(),
+							speed	= $this.data('speed'),
+							easing	= $this.data('easing');
+							//if an item is not yet shown
+							if(!$menu.data('open')){
+								//if current animating return
+								if($menu.data('moving')) return false;
+								$menu.data('moving', true);
+								$.when(openItem(pos, speed, easing)).done(function(){
+									$menu.data({
+										open	: true,
+										moving	: false
+									});
+									showContentItem(pos);
+									$mbPattern.children().fadeOut(500);
+								});
+							}
+							else
+								showContentItem(pos);
+							return false;
+						});
+							
+						/*
+							click close makes the boxes animate to the top of the page
+						 */
+						$mbClose.bind('click', function(e) {
+							$menu.data('open', false);
+							/*
+								if we would want to show the default image when we close:
+								changeBGImage('images/default.jpg');
+							 */
+							$mbPattern.children().fadeIn(500, function() {
+								$mbContentItems.hide();
+								$mbWrapper.hide();
+							});
+								
+							disperse();
+							return false;
+						});
+							
+						/*
+							click an image from "Works" content item,
+							displays the image on the background
+						 */
+						$works.bind('click', function(e) {
+							var source	= $(this).children('img').data('bgimg');
+							changeBGImage(source);
+							return false;
+						});
+								
+					},
+					/*
+						changes the background image
+					 */
+					changeBGImage		= function(img) {
+						//if its the current one return
+						if($mb_bgimage.attr('src') === img || $mb_bgimage.siblings('img').length > 0)
+							return false;
+									
+						var $itemImage = $('<img src="'+img+'" alt="Background" class="mb_bgimage" style="display:none;"/>');
+						$itemImage.insertBefore($mb_bgimage);
+							
+						$mb_bgimage.fadeOut(1000, function() {
+							$(this).remove();
+							$mb_bgimage = $itemImage;
+						});
+						$itemImage.fadeIn(1000);
+					},
+					/*
+						This shows a content item when there is already one shown:
+					 */
+					showContentItem		= function(pos) {
+						$mbContentItems.hide();
+						$mbWrapper.show();
+						$mbContentItems.eq(pos).show().children('.mb_content_inner').jScrollPane();
+					},
+					/*
+						moves the boxes from the top to the center of the page,
+						and shows the respective content item
+					 */
+					openItem			= function(pos, speed, easing) {
+						return $.Deferred(
+						function(dfd) {
+							$mbPattern.children().each(function(i) {
+								var $el			= $(this),
+								param		= {
+									width	: '100px',
+									height	: '100px',
+									top		: 154 + 100 * Math.floor(i/4),
+									left	: 200 + 100 * (i%4),
+									opacity	: 1
+								};
+										
+								if (!$.browser.msie)
+									param.rotate	= '0deg';
+										
+								$el.animate(param, speed, easing, dfd.resolve);
+							});
+						}
+					).promise();
+					};
+						
+					return {
+						init : init
+					};
+					
+				})();
+			
+				/*
+					call the init method of Menu
+				 */
+				Menu.init();
+			});
+		</script>
+    </body>
+</html>
